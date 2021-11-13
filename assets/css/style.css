@@ -6,7 +6,7 @@ body {
   color: #444444;
   background: #fbf7ef;
 }
-ul {
+/* ul {
   list-style-type: none;
 }
 .dropdown > a {
@@ -46,10 +46,52 @@ ul {
     left: 0px;
     will-change: transform;
     background-color: #e8e8e8;
+} */
+
+
+ul.subMenu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: auto;
+  border-radius: 4px;
+  
+}
+
+
+ul.subMenu li {
+  width: 100%;
+  background: #2f5a57;
+  color: white;
+}
+
+ul.subMenu li:hover {
+  width: 100%;
+  background: #e8e8e8;
+  color: black !important;
+}
+#topBar ul.subMenu li a {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+#topBar ul.subMenu li a:hover, #topBar ul.subMenu li.active>a {
+  background: white;
+  padding-left: 1.1rem;
+}
+
+ul.subMenu ul.subMenu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: auto;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #2f5a57 !important;
+  background-color: #525555 !important;
 }
 .imgbackground{
   border: 2px solid #e8e8e8;
